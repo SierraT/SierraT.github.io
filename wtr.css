@@ -1,0 +1,51 @@
+body {
+    font-family:'Lucida Sans';
+    background-color: aliceblue;
+    margin: 0;
+    color:darkslategrey;
+}
+
+.navhead {
+    font-size: 40px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navhead a {
+    float: right;
+    padding: 0px 15px;
+}
+
+.navhead a:hover {
+    color: aliceblue;
+}
+
+.current {
+    background-color: lightskyblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.reportContent {
+    padding: 15px;
+}
+
+.leftBody {
+    padding-right: 50px;
+    text-align: left;
+}
+
+.rightBody {
+    padding-left: 50px;
+    text-align: right;
+}
+
+img {
+    width: 75%;
+}
