@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>Sierra Thomson - Work Term 3</title>
+        <link rel="stylesheet" href="./wtr.css" />
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              darkMode: 'selector'
+            }
+        </script>
+    </head>
+    <body class="bg-white dark:bg-black px-32 py-12" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
+        <button class="rounded-full" @click="darkMode = ! darkMode">Toggle Dark Mode</button>
+        <div class="text-black dark:text-white">
+        </div>
+        <div class="grid grid-cols-3 w-full gap-20">
+            <arcticle class="border overflow-scroll col-span-2 bg-blue-100">
+            </arcticle>
+            <div>
+                <h1 class="text-xl font-bold"> Overview </h1>
+                <ul>
+                    <li>1. Learning Goals</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

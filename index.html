@@ -1,28 +1,42 @@
 <!DOCTYPE html>
     <head>
         <title>Sierra Thomson - Co-op Blog</title>
-        <link rel="stylesheet" href="./wtr.css" />
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              darkMode: 'selector'
+            }
+        </script>
     </head>
-    <body>
-        <div class="navhead">
-            Sierra Thomson
-            <a href="./wtr2.html">WT2</a>
-            <a href="./wtr1.html">WT1</a>
-            <a class="current" href="./index.html">HOME</a>
+    <body class="bg-gradient-to-b from-sky-200 to-sky-100 dark:from-slate-900 dark:to-slate-800 h-full text-sky-950 dark:text-slate-50" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
+        <div class="flex bg-sky-500/10 justify-end px-12 mb-6 gap-6 items-center text-2xl">
+            <button class="rounded-full px-6 py-4 text-5xl text-white font-mono w-24 -mr-6" @click="darkMode = ! darkMode" x-text="darkMode ? '&#9790;' : '&#9728;'"></button>
+            <h1 class="text-4xl mr-auto">
+                <a href="./index.html">Sierra's Space</a>
+            </h1>
+            <a href="./wtr1.html">Work Term 1</a>
+            <a href="./wtr2.html">Work Term 2</a>
+            <a href="./wtr3.html">Work Term 3</a>
         </div>
-        <div class="reportContent">
-            <h1>Sierra Thomson - sthoms12@uoguelph.ca</h1>
+
+        <div class="px-48 z-10">
+            <div class="mb-12 space-y-2 z-10">
+                <h2 class="text-6xl font-bold text-center">Sierra Thomson</h2>
+                <h3 class="text-sm text-center">sthoms12@uoguelph.ca | sthoms12.github.com</h3>
+            </div>
             <p>
                 I am a Computer Science student currently in her third year the University of Guelph, Ontario.
                 I have had interest in coding since I was nine years old, and put my curious and determined
                 additude to work to solve problems and learn as much as I can about the development process.
             </p>
-
             <p> 
                 I have an interest in full-stack work and experience in a multitude of languages including Python, C#,
                 React, Typescript, Java, C, and SQL. 
                 <a href="https://github.com/SierraT"> Check out my GitHub! </a>
-            </p>
+            </p>   
         </div>
+        <img class="sticky bottom-0 -z-10 dark:brightness-[0.1]" src="media/treeline.png"/>
     </body>
 </html>

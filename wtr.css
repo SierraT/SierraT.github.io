@@ -1,13 +1,12 @@
 body {
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    background-color: aliceblue;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: black;
     margin: 0;
     color:darkslategrey;
 }
 
 .navhead {
     font-size: 40px;
-    background-color: cornflowerblue;
     color: aliceblue;
 }
 
