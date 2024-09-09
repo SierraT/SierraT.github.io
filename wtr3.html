@@ -11,15 +11,69 @@
             }
         </script>
     </head>
-    <body class="bg-gradient-to-b from-sky-200 to-sky-100 dark:from-slate-900 dark:to-slate-800 h-full min-h-screen text-sky-950 dark:text-slate-50" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
-        <div class="flex bg-sky-500/10 justify-end px-12 mb-6 gap-6 items-center text-2xl">
-            <button class="rounded-full px-6 py-4 text-5xl text-white font-mono w-24 -mr-6" @click="darkMode = ! darkMode" x-text="darkMode ? '&#9790;' : '&#9728;'"></button>
-            <h1 class="text-4xl mr-auto">
-                <a href="./index.html">Sierra's Space</a>
-            </h1>
-            <a href="./wtr1.html">Work Term 1</a>
-            <a href="./wtr2.html">Work Term 2</a>
-            <a href="./wtr3.html">Work Term 3</a>
+    <body class="flex bg-gradient-to-b from-sky-200 to-sky-100 dark:from-slate-900 dark:to-slate-800 h-screen text-sky-950 dark:text-slate-50" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
+        <div class="w-4/5">
+            <div class="flex bg-sky-500/10 justify-end px-12 mb-12 gap-6 items-center text-2xl">
+                <button class="rounded-full px-6 py-4 text-5xl text-white font-mono w-24 -mr-6" @click="darkMode = ! darkMode" x-text="darkMode ? '&#9790;' : '&#9728;'"></button>
+                <h1 class="text-4xl mr-auto">
+                    <a href="./index.html">Sierra's Space</a>
+                </h1>
+                <a href="./wtr1.html">Work Term 1</a>
+                <a href="./wtr2.html">Work Term 2</a>
+                <a href="./wtr3.html">Work Term 3</a>
+            </div>
+    
+            <article class="scroll-smooth px-10 mx-20 h-3/4 overflow-scroll space-y-6">
+                <div>
+                    <h3 id="intro" class="text-2xl pb-2">Introduction</h3>
+                    <p class="pr-40"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div>
+                    <h3 id="employer" class="text-2xl text-right pb-2">Employer</h3>
+                    <p class="pl-40"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div>
+                    <h3 id="job" class="text-xl text-right">Job Description</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div>
+                    <h3 id="goals" class="text-xl">Learning Goals</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div>
+                    <h3 id="reflection" class="text-xl text-right">Reflection</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div>
+                    <h3 id="conclusion" class="text-xl">Conclusion</h3>
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="h-full w-1/5 bg-sky-300 dark:bg-slate-950 py-6"> 
+            <h1 class="text-left font-bold text-4xl px-6">Work Term 3</h1>
+            <h2 class="pb-12 px-6">Summer 2024</h2>
+            <ul class="flex flex-col text-xl">
+                <a href="#intro" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Introduction</a>
+                <a href="#employer" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Employer</a>
+                <a href="#job" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Job Description</a>
+                <a href="#goals" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Learning Goals</a>
+                <a href="#reflection" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Reflection</a>
+                <a href="#conclusion" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Conclusion</a>
+            </ul>
         </div>
     </body>
 </html>
