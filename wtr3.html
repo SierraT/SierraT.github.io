@@ -11,19 +11,15 @@
             }
         </script>
     </head>
-    <body class="bg-white dark:bg-black px-32 py-12" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
-        <button class="rounded-full" @click="darkMode = ! darkMode">Toggle Dark Mode</button>
-        <div class="text-black dark:text-white">
-        </div>
-        <div class="grid grid-cols-3 w-full gap-20">
-            <arcticle class="border overflow-scroll col-span-2 bg-blue-100">
-            </arcticle>
-            <div>
-                <h1 class="text-xl font-bold"> Overview </h1>
-                <ul>
-                    <li>1. Learning Goals</li>
-                </ul>
-            </div>
+    <body class="bg-gradient-to-b from-sky-200 to-sky-100 dark:from-slate-900 dark:to-slate-800 h-full min-h-screen text-sky-950 dark:text-slate-50" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
+        <div class="flex bg-sky-500/10 justify-end px-12 mb-6 gap-6 items-center text-2xl">
+            <button class="rounded-full px-6 py-4 text-5xl text-white font-mono w-24 -mr-6" @click="darkMode = ! darkMode" x-text="darkMode ? '&#9790;' : '&#9728;'"></button>
+            <h1 class="text-4xl mr-auto">
+                <a href="./index.html">Sierra's Space</a>
+            </h1>
+            <a href="./wtr1.html">Work Term 1</a>
+            <a href="./wtr2.html">Work Term 2</a>
+            <a href="./wtr3.html">Work Term 3</a>
         </div>
     </body>
 </html>
