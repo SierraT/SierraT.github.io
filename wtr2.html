@@ -12,7 +12,7 @@
         </script>
     </head>
     <body class="flex bg-gradient-to-b from-sky-200 to-sky-100 dark:from-slate-900 dark:to-slate-800 sm:h-screen text-sky-950 dark:text-slate-50" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
-        <div class="sm:w-4/5">
+        <div class="sm:w-4/5 overflow-y-scroll scroll-smooth pb-4">
             <div class="flex bg-sky-500/10 justify-end px-6 sm:px-12 sm:mb-4 gap-2 sm:gap-6 items-center text-2xl">
                 <button class="rounded-full sm:px-6 py-4 text-5xl text-white font-mono w-12 sm:w-24 sm:-mr-6" @click="darkMode = ! darkMode" x-text="darkMode ? '&#9790;' : '&#9728;'"></button>
                 <h1 class="text-4xl mr-auto">
@@ -28,7 +28,7 @@
                 longer an accurate representation of my skill set. See 
                 <a class="text-orange-700 hover:underline" href="./wtr3.html">&nbsp;my latest work term report.</a>
             </div>
-            <article class="scroll-smooth p-6 sm:py-0 sm:px-10 sm:mx-20 sm:h-3/5 overflow-scroll space-y-4 sm:space-y-6">
+            <article class="p-6 sm:py-0 sm:px-10 sm:mx-20 space-y-4 sm:space-y-6">
                 <h1>Work Term 2 - FALL 2023</h1>
 
                 <div class="leftBody">
