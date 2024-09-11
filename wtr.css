@@ -1,8 +1,5 @@
 body {
     font-family: 'Inter', Arial, sans-serif;
-    background-color: black;
-    margin: 0;
-    color:darkslategrey;
 }
 
 .navhead {
@@ -45,8 +42,4 @@ h1 {
 
 .rightBody h2 {
     text-align: right;
-}
-
-img {
-    width: 75%;
 }

@@ -1,115 +1,145 @@
 <!DOCTYPE html>
     <head>
         <title>Sierra Thomson - Work Term 2</title>
-        <link rel="stylesheet" href="./wtr.css" />
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="stylesheet" href="./wtr.css" />
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'selector',
+            }
+        </script>
     </head>
-    <body>
-        <div class="navhead">
-            Sierra Thomson
-            <a class="current" href="./wtr2.html">WT2</a>
-            <a href="./wtr1.html">WT1</a>
-            <a href="./index.html">HOME</a>
+    <body class="flex bg-gradient-to-b from-sky-200 to-sky-100 dark:from-slate-900 dark:to-slate-800 sm:h-screen text-sky-950 dark:text-slate-50" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
+        <div class="sm:w-4/5">
+            <div class="flex bg-sky-500/10 justify-end px-6 sm:px-12 sm:mb-4 gap-2 sm:gap-6 items-center text-2xl">
+                <button class="rounded-full sm:px-6 py-4 text-5xl text-white font-mono w-12 sm:w-24 sm:-mr-6" @click="darkMode = ! darkMode" x-text="darkMode ? '&#9790;' : '&#9728;'"></button>
+                <h1 class="text-4xl mr-auto">
+                    <a href="./index.html">Sierra's Space</a>
+                </h1>
+                <a class="hidden sm:inline-flex" href="./wtr1.html">Work Term 1</a>
+                <a class="hidden sm:inline-flex" href="./wtr2.html">Work Term 2</a>
+                <a class="hidden sm:inline-flex" href="./wtr3.html">Work Term 3</a>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center bg-amber-300 text-amber-950 text-center p-5 sm:mb-12">
+                <span class="text-4xl sm:text-2xl mr-2">&#9888; </span>
+                This report has been restyled to match other pages but is no
+                longer an accurate representation of my skill set. See 
+                <a class="text-orange-700 hover:underline" href="./wtr3.html">&nbsp;my latest work term report.</a>
+            </div>
+            <article class="scroll-smooth p-6 sm:py-0 sm:px-10 sm:mx-20 sm:h-3/5 overflow-scroll space-y-4 sm:space-y-6">
+                <h1>Work Term 2 - FALL 2023</h1>
+
+                <div class="leftBody">
+                    <h2 id="intro">INTRODUCTION</h2>
+                    <p> For my first two work terms, I participated in an 8-month internship at PureFacts Financial Solutions. 
+                        While the company's office is based in Toronto, my work was done remotely from my home in Guelph.
+                        During this second half of my work term, I expanded upon the knowledge I gained and was able to experiment 
+                        further with new languages and skills.
+                    </p>
+                </div>
+
+                <div class="rightBody">
+                    <h2 id="employer">MY EMPLOYER</h2>
+                    <p>
+                        Combining corporate and personal values - that's what makes PureFacts Financial Solutions stand out 
+                        as a rapidly-growing organization in the world of financial technology. Chosen as one of the 100 most 
+                        innovative WealthTech firms in the world by WealthTech 100, PureFacts focuses on creating
+                        software that aids wealth and asset management firms in keeping their own customers happy while reducing 
+                        costs and risk. The company provides features such as advanced fee calculation and automatic report generation 
+                        to ligthen the load and increase productivity for these businesses. 
+                    </p>
+                    <p>
+                        The PureFacts motto is "Hungry, Humble, Smart" - that means always striving for greatness and actively finding 
+                        ways to improve yourself... and others! PureFacts works through their PurePossibilites program to provide
+                        food, shelter, and education to those in need, including scholarship and mentorship opportunites for students 
+                        from less fortunate backgrounds (including myself, the recipient of the award in 2021!)
+                    </p>
+                </div>
+
+                <div class="leftBody">
+                    <h2 id="goals">LEARNING GOALS</h2>
+                    <p>
+                        With my first four months under my belt, I felt capable and ready to jump into the second half of my assignment. This new term came 
+                        new goals tailored to gaining new skills, practicing and honing those that I had already gained, and developing good habits for future projects.
+                    </p>
+
+                    <ol>
+                        <b>My Goals:</b>
+                        <li>Expand knowledge in langauges and tools within my company's tech stack that I am still not confident in - with a focus on backend-database connections such as Hangfire and SQL</li>
+                        <li>Take initiative in asking for more complicated tickets/projects, while testing and understanding my limits</li>
+                        <li>Interact with coworkers outside of my core team to better understand how my work affects the company as a whole</li>
+                        <li>Put extra care and focus into testing, trying to avoid making errors that need to be fixed with subsequent pull requests</li>
+                        <li>Continue to keep detailed notes on daily tasks / questions / thoughts, and effectively recap these notes at my weekly meetings with my mentor</li>
+                    </ol>
+
+                    <p>
+                        This term I achieved success in all my goals. After a talk with my supervisors I was given tasks that focused more on backend and database work, an area in which I felt 
+                        I had less experience. As a result, I encountered more roadblocks. Those roadblocks were handled effectively by discussing problems and questions with team members. I quickly 
+                        learned how to gauge if a task was too confusing or difficult and reach out to team members for assistance. On top of this, I joined in on meetings beyond the scope of my team -- 
+                        one with the entire company involved -- to gain better insight into the overall function of PureFacts and the interactions between departments. After completing so many tasks in the first 
+                        term of my assignment, I was beginning to get a feel for the full process of software development; not just coding, but planning, analyzing, and executing those changes in a way that is 
+                        non-disruptive to my coworkers. I successfully employed my strategy to double-check changed files before merging code in order to avoid mistakes that would have to be fixed later on. 
+                    </p>
+                    <p>
+                        While I consider myself successful in my goals for this term, I still recognize room for my improvement in the future. Upon reflection of this work term -- and of this co-op assignment as a whole -- I feel 
+                        that I could have made much faster progress if I had asked for more challenging tickets or showed more interest in learning the more complicated aspects of our company's projects sooner. In meetings, I could have 
+                        spoken up and made more of an effort to understand my colleague's tasks as well as my own. I have certainly shown an improvement in my programming skill and independence, but in order to improve beyond this point 
+                        I must put more effort into learning from others and seeking out new challenges that will encourage me to grow. I am excited to make a more outward attempt at being involved with my company in future work terms and in 
+                        my eventual career in Computer Science.
+                    </p>
+                </div>
+
+                <div class="rightBody">
+                    <h2 id="job">JOB DESCRIPTION</h2>
+                    <p>
+                        As a Software Development Intern at PureFacts, I worked full-stack to design, develop and maintain two pieces of software for the 
+                        company: their legacy PureFacts application, and a new in-progress application for their next generation of software.
+                    </p>
+
+                    <p>
+                        The skills required for the job involved a range of languages and frameworks including React and ExtJS, Typescript, C#, and SQL,
+                        as well as source control using git and Azure DevOps.
+                        While most of my tasks from the first term were centered around ExtJS, React and Typescript, this term I expanded further into C# and SQL. I can proudly
+                        say that I have grown comfortable in all these languages. I was able to independently write SQL for database scripts, and edit the backend of API calls to return 
+                        properly formatted data. 
+                    </p>
+
+                    <p>
+                        I was able to effectively manage my time, deciding when it was necessary to contact other team members for help and recognizing when I could easily look into a problem on 
+                        my own. Both approaches improved my understanding of the company's code, as well as approaches to coding in general. I am proud to be more fluent than ever, not only in programming languages 
+                        themselves, but in the IDEs and tools necessary for modern developers to streamline their work.
+                    </p>
+                </div>
+
+                <div class="leftBody">
+                    <h2 id="conclusion">CONCLUSIONS AND ACKNOWLEDGEMENTS</h2>
+                    <p>
+                        Working at PureFacts has left me feeling fulfilled and ready to enter into the professional world of Computer Science. I entered the second term of this 8-month 
+                        co-op with confidence and curiosity, and left it with a new sense of understanding of all parts of the development process. I am certain that the knowledge gained from 
+                        this experience will be invaluable in my future prospects -- both personal and professional. However, I feel that my newly-gained skills are now in need of expanding and honing. 
+                        In the future I hope to take on more challenging projects (not just bug fixes!) and to continue to improve my communication with my coworkers, bringing a sense of curiosity and initiative into 
+                        everything I do.
+                    </p>
+                        Special thanks are given to Chris Wang and Samuel Kim for their willingness to support and tailor my tasks to what I was most excited to learn, 
+                        and the great attitude and direction given to the PureFacts team over the wonderful last 8 months.
+                    <p>
+                    </p>
+                </div>
+            </article>
         </div>
-        <div class="reportContent">
-            <h1>Work Term 2 - FALL 2023</h1>
 
-            <div class="leftBody">
-                <h2>INTRODUCTION</h2>
-                <p> For my first two work terms, I participated in an 8-month internship at PureFacts Financial Solutions. 
-                    While the company's office is based in Toronto, my work was done remotely from my home in Guelph.
-                    During this second half of my work term, I expanded upon the knowledge I gained and was able to experiment 
-                    further with new languages and skills.
-                </p>
-            </div>
-
-            <div class="rightBody">
-                <h2>MY EMPLOYER</h2>
-                <p>
-                    Combining corporate and personal values - that's what makes PureFacts Financial Solutions stand out 
-                    as a rapidly-growing organization in the world of financial technology. Chosen as one of the 100 most 
-                    innovative WealthTech firms in the world by WealthTech 100, PureFacts focuses on creating
-                    software that aids wealth and asset management firms in keeping their own customers happy while reducing 
-                    costs and risk. The company provides features such as advanced fee calculation and automatic report generation 
-                    to ligthen the load and increase productivity for these businesses. 
-                </p>
-                <p>
-                    The PureFacts motto is "Hungry, Humble, Smart" - that means always striving for greatness and actively finding 
-                    ways to improve yourself... and others! PureFacts works through their PurePossibilites program to provide
-                    food, shelter, and education to those in need, including scholarship and mentorship opportunites for students 
-                    from less fortunate backgrounds (including myself, the recipient of the award in 2021!)
-                </p>
-            </div>
-
-            <div class="leftBody">
-                <h2>LEARNING GOALS</h2>
-                <p>
-                    With my first four months under my belt, I felt capable and ready to jump into the second half of my assignment. This new term came 
-                    new goals tailored to gaining new skills, practicing and honing those that I had already gained, and developing good habits for future projects.
-                </p>
-
-                <ol>
-                    <b>My Goals:</b>
-                    <li>Expand knowledge in langauges and tools within my company's tech stack that I am still not confident in - with a focus on backend-database connections such as Hangfire and SQL</li>
-                    <li>Take initiative in asking for more complicated tickets/projects, while testing and understanding my limits</li>
-                    <li>Interact with coworkers outside of my core team to better understand how my work affects the company as a whole</li>
-                    <li>Put extra care and focus into testing, trying to avoid making errors that need to be fixed with subsequent pull requests</li>
-                    <li>Continue to keep detailed notes on daily tasks / questions / thoughts, and effectively recap these notes at my weekly meetings with my mentor</li>
-                </ol>
-
-                <p>
-                    This term I achieved success in all my goals. After a talk with my supervisors I was given tasks that focused more on backend and database work, an area in which I felt 
-                    I had less experience. As a result, I encountered more roadblocks. Those roadblocks were handled effectively by discussing problems and questions with team members. I quickly 
-                    learned how to gauge if a task was too confusing or difficult and reach out to team members for assistance. On top of this, I joined in on meetings beyond the scope of my team -- 
-                    one with the entire company involved -- to gain better insight into the overall function of PureFacts and the interactions between departments. After completing so many tasks in the first 
-                    term of my assignment, I was beginning to get a feel for the full process of software development; not just coding, but planning, analyzing, and executing those changes in a way that is 
-                    non-disruptive to my coworkers. I successfully employed my strategy to double-check changed files before merging code in order to avoid mistakes that would have to be fixed later on. 
-                </p>
-                <p>
-                    While I consider myself successful in my goals for this term, I still recognize room for my improvement in the future. Upon reflection of this work term -- and of this co-op assignment as a whole -- I feel 
-                    that I could have made much faster progress if I had asked for more challenging tickets or showed more interest in learning the more complicated aspects of our company's projects sooner. In meetings, I could have 
-                    spoken up and made more of an effort to understand my colleague's tasks as well as my own. I have certainly shown an improvement in my programming skill and independence, but in order to improve beyond this point 
-                    I must put more effort into learning from others and seeking out new challenges that will encourage me to grow. I am excited to make a more outward attempt at being involved with my company in future work terms and in 
-                    my eventual career in Computer Science.
-                </p>
-            </div>
-
-            <div class="rightBody">
-                <h2>JOB DESCRIPTION</h2>
-                <p>
-                    As a Software Development Intern at PureFacts, I worked full-stack to design, develop and maintain two pieces of software for the 
-                    company: their legacy PureFacts application, and a new in-progress application for their next generation of software.
-                </p>
-
-                <p>
-                    The skills required for the job involved a range of languages and frameworks including React and ExtJS, Typescript, C#, and SQL,
-                    as well as source control using git and Azure DevOps.
-                    While most of my tasks from the first term were centered around ExtJS, React and Typescript, this term I expanded further into C# and SQL. I can proudly
-                    say that I have grown comfortable in all these languages. I was able to independently write SQL for database scripts, and edit the backend of API calls to return 
-                    properly formatted data. 
-                </p>
-
-                <p>
-                    I was able to effectively manage my time, deciding when it was necessary to contact other team members for help and recognizing when I could easily look into a problem on 
-                    my own. Both approaches improved my understanding of the company's code, as well as approaches to coding in general. I am proud to be more fluent than ever, not only in programming languages 
-                    themselves, but in the IDEs and tools necessary for modern developers to streamline their work.
-                </p>
-            </div>
-
-            <div class="leftBody">
-                <h2>CONCLUSIONS AND ACKNOWLEDGEMENTS</h2>
-                <p>
-                    Working at PureFacts has left me feeling fulfilled and ready to enter into the professional world of Computer Science. I entered the second term of this 8-month 
-                    co-op with confidence and curiosity, and left it with a new sense of understanding of all parts of the development process. I am certain that the knowledge gained from 
-                    this experience will be invaluable in my future prospects -- both personal and professional. However, I feel that my newly-gained skills are now in need of expanding and honing. 
-                    In the future I hope to take on more challenging projects (not just bug fixes!) and to continue to improve my communication with my coworkers, bringing a sense of curiosity and initiative into 
-                    everything I do.
-                </p>
-                    Special thanks are given to Chris Wang and Samuel Kim for their willingness to support and tailor my tasks to what I was most excited to learn, 
-                    and the great attitude and direction given to the PureFacts team over the wonderful last 8 months.
-                <p>
-                </p>
-            </div>
+        <div class="hidden sm:block h-full w-1/5 bg-sky-300 dark:bg-slate-950 py-6"> 
+            <h1 class="text-left font-bold text-4xl px-6">Work Term 2</h1>
+            <h2 class="pb-12 px-6">Fall 2023</h2>
+            <ul class="flex flex-col text-xl">
+                <a href="#intro" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Introduction</a>
+                <a href="#employer" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Employer</a>
+                <a href="#goals" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Learning Goals</a>
+                <a href="#job" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Job Description</a>
+                <a href="#conclusion" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Conclusion</a>
+            </ul>
         </div>
     </body>
 </html>
