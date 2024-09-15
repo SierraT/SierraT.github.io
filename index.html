@@ -23,33 +23,117 @@
         </div>
 
         <div>
-            <div class="flex flex-col sm:flex-row items-center justify-center bg-amber-300 text-amber-950 text-center p-5 sm:mb-12">
-                <span class="text-4xl sm:text-2xl mr-2">&#9888; </span>
-                This page is a work in progress. Please bear with me.
-            </div>
-            <div class="flex flex-col px-6 sm:px-48 z-10 items-center">
-                <div class="mb-12 space-y-2 z-10">
+            <div class="flex flex-col px-6 sm:px-48 items-center text-center space-y-6" x-data="{tab: 0}">
+                <div class="mb-6 space-y-2 z-10">
                     <h2 class="text-6xl font-bold text-center">Sierra Thomson</h2>
-                    <h3 class="text-sm text-center">sthoms12@uoguelph.ca | sthoms12.github.com</h3>
+                    <h3 class="text-center">
+                        <a class="">sthoms12@uoguelph.ca</a> | 
+                        <a class="hover:underline hover:text-blue-600" href="https://www.linkedin.com/in/sierra-thomson-73905023b/">LinkedIn</a> 
+                    </h3>
                 </div>
                 <p>
                     Fourth Year Computer Science Undergrad at University of Guelph, Ontario.
-                    I have had an interest in coding since I was nine years old, and put my curious and determined
-                    attitude to work to solve problems and provide as much as I can to every project and team.
-                </p>
-                <p> 
-                    I have an interest in full-stack work and experience in a multitude of languages and frameworks including:
-                </p>   
-                <ul class="list-disc">
-                    <li>PHP (Laravel)</li>
-                    <li>Javascript (React, Typescript, Alpine.JS)</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>SQL</li>
-                </ul>
+                    Creative, collaborative, and curious. Always looking to learn new things 
+                    and get involved with unique and interesting projects.
+                </p> 
+                <div class="flex border-b border-sky-600">
+                    <h3 @click="tab = 0" class="w-48 py-2 border-b-4" :class="tab == 0 ? 'font-bold border-sky-600' : 'hover:border-sky-600 border-transparent'">Experience</h3>
+                    <h3 @click="tab = 1" class="w-48 py-2 border-b-4" :class="tab == 1 ? 'font-bold border-sky-600' : 'hover:border-sky-600 border-transparent'">Education</h3>
+                    <h3 @click="tab = 2" class="w-48 py-2 border-b-4" :class="tab == 2 ? 'font-bold border-sky-600' : 'hover:border-sky-600 border-transparent'">Skills</h3>
+                </div>
+                <div class="w-1/2 text-left space-y-10" x-show="tab == 0" x-transition>
+                    <div class="space-y-2">
+                        <h3 class="flex justify-between font-bold text-lg">
+                            <span>Software Developer Intern</span>
+                            <span>May-Aug 2024</span>
+                        </h3>
+                        <p class="italic text-sm">Adknown, Inc.</p>
+                        <ul class="pl-10 list-disc pb-2">
+                            <li>Implemented new functionality for internal ad management software using PHP and SQL</li>
+                            <li>Designed clear, effective web components with paper prototypes and Figma</li>
+                            <li>Used PHP, Tailwind, and Alpine.JS to create web components that matched prototypes</li>
+                            <li>
+                                Researched and compiled findings on new technologies into concise Confluence documentation, 
+                                providing advice and instructions for new hires
+                            </li>
+                            <li>Managed and updated WordPress sites to improve user experience</li>
+                        </ul>
+                        <button class="bg-blue-600 text-white hover:bg-blue-700 hover:scale-105 rounded-full py-2 px-4">
+                            <a href="./wtr3.html">See Work Term Report (S24)</a>
+                        </button>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="flex justify-between font-bold text-lg">
+                            <span>Software Engineering Intern</span>
+                            <span>May-Dec 2023</span>
+                        </h3>
+                        <p class="italic text-sm">Purefacts Financial Solutions</p>
+                        <ul class="pl-10 list-disc pb-2">
+                            <li>Implemented new features for financial report generation using C#, SQL, and React</li>
+                            <li>Improved company’s legacy software by identifying and correcting bugs in ExtJS code</li>
+                            <li>Summarised daily stand-up meetings and distributed notes to peers to improve team cohesion</li>
+                        </ul>
+                        <button class="block bg-blue-600 text-white hover:bg-blue-700 hover:scale-105 rounded-full py-2 px-4">
+                            <a href="./wtr1.html">See Work Term Report (S23)</a>
+                        </button>
+                        <button class="block bg-blue-600 text-white hover:bg-blue-700 hover:scale-105 rounded-full py-2 px-4">
+                            <a href="./wtr2.html">See Work Term Report (F23)</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-1/2 text-left space-y-1" x-show="tab == 1" x-transition>
+                    <h3 class="flex justify-between font-bold text-lg">
+                        <span>Bachelor of Computing Honors Co-op</span>
+                        <span>2021-2026</span>
+                    </h3>
+                    <p class="italic text-sm">University of Guelph – Guelph, ON</p>
+                    <ul class="pl-10 list-disc">
+                        <li>93% Average</li>
+                        <li>Minor in Creative Writing</li>
+                    </ul>
+                    <h4 class="font-bold">Molecule Display Site (Grade: 91%)</h4>
+                    <p>
+                        Created a full-stack web application: molecular data stored in SQL database is transformed by C/Python 
+                        backend before being displayed as a rotatable SVG model in a simple HTML/JS webpage
+                    </p>
+                    <h4 class="font-bold">Game Suite (Grade: 100%)</h4>
+                    <p>
+                        Implemented two tic-tac-toe variations into a Java-based application with functioning GUI, player profiles, and save/load mechanics
+                    </p>
+                </div>
+                <div class="flex w-1/2 text-left gap-2" x-show="tab == 2" x-transition>
+                    <div class="w-1/3">
+                        <h4 class="font-bold text-lg pb-2 text-nowrap">Tech - Proficient</h4>
+                        <ul class="pl-5 list-disc">
+                            <li>PHP (incl. Laravel)</li>
+                            <li>JavaScript (incl. React, Alpine.JS)</li>
+                            <li>TypeScript</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                    <div class="w-1/3">
+                        <h4 class="font-bold text-lg pb-2 text-nowrap">Tech - Familiar</h4>
+                        <ul class="pl-5 list-disc">
+                            <li>SQL</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>C</li>
+                        </ul>
+                    </div>
+                    <div class="w-1/3">
+                        <h4 class="font-bold text-lg pb-2 text-nowrap">Additional Skills</h4>
+                        <ul class="pl-5 list-disc">
+                            <li>Agile Development (Scrum)</li>
+                            <li>Version Control</li>
+                            <li>Technical Writing</li>
+                            <li>Time Management</li>
+                            <li>Logical, Perceptive</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="sticky bottom-0">
+            <div class="sticky bottom-0 pointer-events-none">
                 <img class="dark:brightness-[0.1]" src="media/treelineCrop.png"/>
                 <p class="absolute bottom-2 inset-x-0.5 text-white dark:text-slate-300 text-xs text-center">Image by <a href="https://www.freepik.com/free-psd/green-forest-illustration_171328396.htm#query=treeline%20png&position=49&from_view=keyword&track=ais_hybrid&uuid=c7098d83-7f5a-4e94-a1d3-24ca1929e90f">Freepik</a></p>
             </div>
