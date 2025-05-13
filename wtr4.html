@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <head>
+        <title>Sierra Thomson - Work Term 3</title>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="stylesheet" href="./wtr.css" />
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'selector',
+            }
+        </script>
+    </head>
+    <body class="flex bg-gradient-to-b from-sky-200 to-sky-100 dark:from-slate-900 dark:to-slate-800 sm:h-screen text-sky-950 dark:text-slate-50" :class="darkMode ? 'dark' : ''" x-data="{ darkMode: false }">
+        <div class="sm:w-4/5 overflow-y-scroll scroll-smooth pb-4">
+            <div class="flex bg-sky-500/10 justify-end px-6 sm:px-12 sm:mb-12 gap-2 sm:gap-6 items-center text-2xl">
+                <button class="rounded-full sm:px-6 py-4 text-5xl text-white font-mono w-12 sm:w-24 sm:-mr-6" @click="darkMode = ! darkMode" x-text="darkMode ? '&#9790;' : '&#9728;'"></button>
+                <h1 class="text-4xl mr-auto">
+                    <a href="./index.html">Sierra's Space</a>
+                </h1>
+                <a class="hidden sm:inline-flex" href="./wtr1.html">Work Term 1</a>
+                <a class="hidden sm:inline-flex" href="./wtr2.html">Work Term 2</a>
+                <a class="hidden sm:inline-flex" href="./wtr3.html">Work Term 3</a>
+                <a class="hidden sm:inline-flex" href="./wtr4.html">Work Term 4</a>
+            </div>
+    
+            <article class="p-6 sm:py-0 sm:px-10 sm:mx-20 space-y-4 sm:space-y-6">
+                <div>
+                    <h3 id="intro" class="text-2xl pb-2">Introduction</h3>
+                    <img class="float-left pr-4" src="media/Adknown.jpg" alt="Adknown Logo" width="110"/>
+                    <p class="sm:pr-40"> 
+                        This past winter I completed my fourth co-op work term as a software developer intern with Rocket Innovation Studio.
+                        The following report summarizes the work I did for this term including job responsibilities, skills learned,
+                        and how those skills will benefit my future educational, occupational and personal pursuits.
+                    </p>
+                </div>
+                <div>
+                    <h3 id="employer" class="text-2xl pb-2 clear-left">About my Employer - Rocket Innovation Studio</h3>
+                    <p class="sm:pr-32"> 
+                        <a class="text-blue-600 hover:underline" href="/">Rocket Innovation Studio.</a>
+                    </p>
+                    <p class="sm:pr-40"> 
+                        TODO
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h3 id="job" class="text-2xl clear-right">Job Description</h3>
+                    <p class="sm:pr-40"> 
+                        TODO
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h3 id="goals" class="text-2xl pb-2">Learning Goals</h3>
+                    <div class="space-y-2 pb-2">
+                        <p class="sm:pr-40"> 
+                            TODO
+                        </p>
+                    </div>
+                    <div class="pb-6">
+                        <h4 class="font-bold text-lg pb-2">
+                            <span class="px-3 py-1 bg-sky-600 text-white rounded-full mr-1">1</span>
+                            <span>TODO</span>
+                        </h4>
+                        <p class="pl-4">
+                            TODO
+                        </p>
+                    </div>
+                    <div class="pb-6">
+                        <h4 class="font-bold text-lg pb-2">
+                            <span class="px-3 py-1 bg-sky-600 text-white rounded-full mr-1">2</span>
+                            <span>TODO</span>
+                        </h4>
+                        <p class="pl-4">
+                            TODO
+                        </p>
+                    </div>
+                    <div class="pb-6">
+                        <h4 class="font-bold text-lg pb-2">
+                            <span class="px-3 py-1 bg-sky-600 text-white rounded-full mr-1">3</span>
+                            <span>TODO</span>
+                        </h4>
+                        <p class="pl-4">
+                            TODO
+                        </p>
+                    </div>
+                    <div class="pb-6">
+                        <h4 class="font-bold text-lg pb-2">
+                            <span class="px-3 py-1 bg-sky-600 text-white rounded-full mr-1">4</span>
+                            <span>TODO</span>
+                        </h4>
+                        <p class="pl-4">
+                            TODO
+                        </p>
+                    </div>
+                    <div class="pb-2 sm:pb-6">
+                        <h4 class="font-bold text-lg pb-2">
+                            <span class="px-3 py-1 bg-sky-600 text-white rounded-full mr-1">5</span>
+                            <span>TODO</span>
+                        </h4>
+                        <p class="pl-4">
+                            TODO
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-2 clear-left">
+                    <h3 id="reflection" class="text-2xl">Further Reflection</h3>
+                    <p class="sm:pr-40">  
+                        TODO
+                    </p>
+                    <p class="pt-2">...I also learned that I'm very bad at cornhole.</p>
+                    <img class="" src="media/Cornhole.JPG" alt="Me missing a cornhole toss"/>
+                </div>
+                <div class="space-y-2">
+                    <h3 id="conclusion" class="text-2xl">Conclusion</h3>
+                    <p class="sm:pr-40"> 
+                        TODO
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="hidden sm:block h-full w-1/5 bg-sky-300 dark:bg-slate-950 py-6"> 
+            <h1 class="text-left font-bold text-4xl px-6">Work Term 4</h1>
+            <h2 class="pb-12 px-6">Winter 2025</h2>
+            <ul class="flex flex-col text-xl">
+                <a href="#intro" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Introduction</a>
+                <a href="#employer" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Employer</a>
+                <a href="#job" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Job Description</a>
+                <a href="#goals" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Learning Goals</a>
+                <a href="#reflection" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Reflection</a>
+                <a href="#conclusion" class="p-6 hover:bg-sky-400/50 active:bg-sky-400">Conclusion</a>
+            </ul>
+        </div>
+    </body>
+</html>
